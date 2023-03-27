@@ -1,0 +1,272 @@
+
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+} 
+/* logo and images */
+#logo{
+        margin: 8px 14px;
+}
+#logo img{
+    height: 81px;
+    width: 100px
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    font-family: 'Abril Fatface', cursive;
+    position: sticky;
+/* font-family: 'Edu NSW ACT Foundation', cursive; */
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+    
+/* listing style */
+
+
+#navbar ul{
+       display: flex;
+    
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: block;
+    padding: 3px 40px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    color:#dfdf16;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 200px;
+    justify-content: center;
+    align-items: center;  
+    height: 485px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/welpic2.jpg') no-repeat center center/cover;
+    top: 0px;
+    left:0px;
+    height: 595px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+     color:#e5c0c0;
+     text-align: center;
+     /* font-family: 'Edu NSW ACT Foundation', cursive; */
+     font-family: 'Fasthand', cursive;
+    /* font-family: 'Fasthand', cursive; */
+}
+
+#home p{
+    color:#e5c0c0;
+    text-align: center;
+    font-size: 1.2rem;   
+    font-family: 'Tourney', cursive;
+}
+
+/* section center */
+#service{
+    /* height: 420px;
+    width: 97%; */
+    margin: 20px;
+    display: flex;
+}
+
+#service .box{
+    border: 2px solid brown;
+    padding: 13px;
+    margin: 11px 57px;
+    border-radius: 27px;
+    background-color: #c5d7d8;
+}
+
+#service .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#service .box .minihead{
+    text-align: center;
+}
+#service .box .center{
+    
+    text-align: center;
+    justify-content: center;
+}
+.service .head2{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+#service .box p{
+    font-family: 'Tourney', cursive;
+}
+#service{}
+
+/* client section */
+#client{
+    position: relative;
+    /* height: 344px; */
+}
+
+#client::before{
+    content: " ";
+    position: absolute;
+    background: url('../img/bgbb.jpg') no-repeat center center/cover ;
+    width: 100% ;
+    /* height: 44%; */
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#client .sname{
+    color: #5092ae;
+    font-family: 'Fasthand', cursive;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    margin: 25px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 132px;
+}
+
+.client-item{
+    padding: 23px;
+}
+
+/* contact */
+#contact{
+
+}
+
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 685px;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius:6px ;
+    font-size: 1rem;
+}
+
+#contact-box form{
+    width: 33%;
+
+}
+#contact-box label{
+    font-size: 1.1rem;
+}
+
+#contact .head3{
+    color: #5092ae;
+    font-family: 'Fasthand', cursive;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+
+
+/* footer */
+footer{
+    background-color: black;
+    color: #c5d7d8;
+    padding: 5px 10px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 137px;
+    margin-bottom: 1px;
+}
+
+/* utility class */
+.head1{
+    font-size: 3rem;
+    padding:15px; 
+    
+}
+
+.head2{
+    color: #886868;
+    font-size: 3rem;
+    padding: 15px;
+    font-family: 'Fasthand', cursive;
+    display: block;
+    text-align: center;
+}
+
+.btn{
+    padding: 5px 20px;
+    margin: 15px;
+    border: 2px solid grey;
+    background-color: #9e3131;
+    font-size: 1.2rem;
+    color: #dfdf16;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
